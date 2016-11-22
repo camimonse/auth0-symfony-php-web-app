@@ -6,18 +6,9 @@ This is the seed project you need to use if you're going to create a Symfony app
 
 In order to run the example you need to have `composer` and `php` installed.
 
-You also need to set the ClientSecret, ClientId and Domain for your Auth0 app as environment variables with the following names respectively: `AUTH0_CLIENT_SECRET`,`AUTH0_CLIENT_ID` and `AUTH0_DOMAIN`.
+First, replace stubs in `app/config/config.yml` with your `AUTH0_CLIENT_SECRET`,`AUTH0_CLIENT_ID` and `AUTH0_DOMAIN`credentials. You can  find this information in the Auth0 dashboard in the `settings` tab of your client.
 
-For that, create a new file with the following code and save it as `.env` file in the directory and set the values like the following:
-
-```
-# .env file
-AUTH0_CLIENT_SECRET=myCoolSecret
-AUTH0_CLIENT_ID=myCoolClientId
-AUTH0_DOMAIN=yourDomain.auth0.com
-```
-
-Once you've set those 4 enviroment variables, install the dependencies by running the following command:
+Once you've set the respective credentials, install the dependencies by running the following command:
 
 ```
 composer install
